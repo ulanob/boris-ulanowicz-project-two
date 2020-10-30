@@ -1,0 +1,31 @@
+.section-1 {
+  background-color: $pine;
+  padding-top: 300px;
+}
+
+.useful-links {
+  display: grid;
+  grid-template-columns: 5% 45% 5% 45%;
+  grid-template-rows: 300px 300px;
+}
+
+.icon{
+  background-color: $sunflower-yellow;
+  border-radius: 50%;
+  color: $black;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  margin: 20px auto;
+}
+
+i {
+  font-size: 20px;
+  position: absolute;
+  left: 12px;
+  top: 9px;
+}
+
+.icon-right i{
+  left: 8px
+}
