@@ -4,6 +4,8 @@
 }
 html {
   font-size: 62.5%;
+  font-family: 'Barlow', sans-serif;
+  color: white;
 }
 
 ul {
@@ -46,17 +48,28 @@ h3 {
 }
 
 p {
-  font-family: 'Barlow', sans-serif;
   font-size: 2rem;
-  line-height: 28px;
+  line-height: 2.8rem;
   letter-spacing: 1px;
-  color: white;
 }
 
 a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
   text-decoration: none;
-  color: inherit;
+  display: block;
+  width: fit-content;
+  height: 40px;
+  background-color: $sunflower-yellow;
 }
 
+
+// a {
+//   display: block;
+//   width: auto;
+//   height: 60px;
+//   background-color: $yellow;
+//   color: $white;
+// }
 
 

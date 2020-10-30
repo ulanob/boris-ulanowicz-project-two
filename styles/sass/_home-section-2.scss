@@ -1,0 +1,30 @@
+.home-section-2 {
+  background-color: $almost-black;
+}
+
+.best-burger-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px 400px;
+  grid-column-gap: 100px;
+}
+
+.best-burger-box h2 {
+  margin-top: 50px;
+}
+
+.try-something {
+  text-align: right;
+}
+
+// figure out why .try-something a is not aligning right
+.try-something a {
+  float: right;
+}
+
+.best-burger-box a {
+  color: $black;
+  padding: 12px 5px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}

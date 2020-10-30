@@ -19,10 +19,12 @@ nav li {
 }
 
 nav a {
-  font-family: 'Josefin Sans', sans-serif;
+  display: inline;
   font-weight: 700;
-  font-size: 2rem;
   padding-bottom: 5px;
+  border-bottom: 3px solid inherit;
+  background-color: inherit;
+  color: $white;
 }
 
 nav a:hover,

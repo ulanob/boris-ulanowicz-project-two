@@ -242,6 +242,8 @@ html {
 
 html {
   font-size: 62.5%;
+  font-family: 'Barlow', sans-serif;
+  color: white;
 }
 
 ul {
@@ -283,16 +285,21 @@ h3 {
 }
 
 p {
-  font-family: 'Barlow', sans-serif;
   font-size: 2rem;
-  line-height: 28px;
+  line-height: 2.8rem;
   letter-spacing: 1px;
-  color: white;
 }
 
 a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
   text-decoration: none;
-  color: inherit;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 40px;
+  background-color: #FFD300;
 }
 
 nav {
@@ -319,10 +326,12 @@ nav li {
 }
 
 nav a {
-  font-family: 'Josefin Sans', sans-serif;
+  display: inline;
   font-weight: 700;
-  font-size: 2rem;
   padding-bottom: 5px;
+  border-bottom: 3px solid inherit;
+  background-color: inherit;
+  color: #FFFFFF;
 }
 
 nav a:hover,
@@ -358,7 +367,7 @@ h1 span {
   top: 35%;
 }
 
-.section-1 {
+.home-section-1 {
   background-color: #2B331B;
   padding-top: 300px;
 }
@@ -387,8 +396,42 @@ i {
   position: absolute;
   left: 12px;
   top: 9px;
+  color: #0F0F0F;
 }
 
 .icon-right i {
   left: 8px;
+}
+
+.home-section-2 {
+  background-color: #171B0E;
+}
+
+.best-burger-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 500px 400px;
+      grid-template-rows: 500px 400px;
+  grid-column-gap: 100px;
+}
+
+.best-burger-box h2 {
+  margin-top: 50px;
+}
+
+.try-something {
+  text-align: right;
+}
+
+.try-something a {
+  float: right;
+}
+
+.best-burger-box a {
+  color: #0F0F0F;
+  padding: 12px 5px;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
