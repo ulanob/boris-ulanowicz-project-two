@@ -1,14 +1,51 @@
-.wrapper {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+nav {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: 1px;
+  color: $white;
+  text-transform: capitalize;
+  width: calc(100% / 3);
+  padding-top: 50px;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+  border-bottom: 3px solid $sunflower-yellow;
+}
+
+// HOMEPAGE styles
 .home-header {
   background-image: url(../the-restaurant-mall-assets/home-header.jpg);
   min-height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
+}
+
+h1 span {
+  display: block;
+  background-color: white;
+  color: initial;
+  width: fit-content;
+  padding: 12px 9px 0;
+  line-height: 6.9rem;
+  margin-bottom: 10px;
 }
 
