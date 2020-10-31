@@ -1,15 +1,18 @@
-.article-1{
+.article-1, 
+.article-2{
   background-color: $pine;
   padding-bottom: 50px;
 }
 
-.article-1 h2 {
+.article-1 h2,
+.article-2 h2 {
   color: $sunflower-yellow;
   text-align: center;
   padding-top: 50px;
 }
 
-.article-1 a {
+.article-1 a,
+.article-2 a {
   background-color: $black;
   text-align: center;
   margin: 30px auto;
@@ -19,4 +22,26 @@
 
 .banner {
   max-height: 500px;
+}
+
+.article-2 .wrapper{
+  display: flex;
+}
+
+.article-2-img{
+  width: 30%;
+}
+
+.article-2-text {
+  width: 70%;
+  padding: 0px 50px;
+}
+
+.article-2-text h2,
+.article-2-text a {
+  text-align: left;
+}
+
+.article-2-text a {
+  margin: 20px 0;
 }

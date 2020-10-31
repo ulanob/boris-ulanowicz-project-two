@@ -436,18 +436,21 @@ i {
   margin-top: 20px;
 }
 
-.article-1 {
+.article-1,
+.article-2 {
   background-color: #2B331B;
   padding-bottom: 50px;
 }
 
-.article-1 h2 {
+.article-1 h2,
+.article-2 h2 {
   color: #FFD300;
   text-align: center;
   padding-top: 50px;
 }
 
-.article-1 a {
+.article-1 a,
+.article-2 a {
   background-color: #0F0F0F;
   text-align: center;
   margin: 30px auto;
@@ -457,4 +460,28 @@ i {
 
 .banner {
   max-height: 500px;
+}
+
+.article-2 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article-2-img {
+  width: 30%;
+}
+
+.article-2-text {
+  width: 70%;
+  padding: 0px 50px;
+}
+
+.article-2-text h2,
+.article-2-text a {
+  text-align: left;
+}
+
+.article-2-text a {
+  margin: 20px 0;
 }
