@@ -1,3 +1,11 @@
+header {
+  min-height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
 nav {
   font-size: 2rem;
   text-align: center;
@@ -31,14 +39,14 @@ nav a:focus {
   border-bottom: 3px solid $sunflower-yellow;
 }
 
-// HOMEPAGE styles
+// HOMEPAGE header styles
 .home-header {
   background-image: url(../the-restaurant-mall-assets/home-header.jpg);
-  min-height: 95vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  position: relative;
+  // min-height: 95vh;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: top;
+  // position: relative;
 }
 
 h1 span {
@@ -60,3 +68,12 @@ h1 span {
   // min-height: 400px;
 }
 
+// BLOG header styles
+.blog-header {
+  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+  min-height: 70vh;
+  h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}

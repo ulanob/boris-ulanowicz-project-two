@@ -8,7 +8,6 @@
 .article-2 h2 {
   color: $sunflower-yellow;
   text-align: center;
-  padding-top: 50px;
 }
 
 .article-1 a,
@@ -46,3 +45,5 @@
 .article-2-text a {
   margin: 20px 0;
 }
+
+// create global rule for top+bottom padding for sections, articles, and gallery
