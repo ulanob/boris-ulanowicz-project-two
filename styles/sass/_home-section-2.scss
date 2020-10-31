@@ -2,16 +2,22 @@
   background-color: $almost-black;
 }
 
-.best-burger-box {
+.section-two-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px 400px;
+  grid-template-rows: 500px 500px;
   grid-column-gap: 100px;
+  // overflow: visible;
 }
 
-.best-burger-box h2 {
+.section-two-box h2 {
   margin-top: 50px;
 }
+
+// .section-two-box img {
+//   // width: inherit;
+//   // float: left;
+// }
 
 .try-something {
   text-align: right;
@@ -22,9 +28,10 @@
   float: right;
 }
 
-.best-burger-box a {
+.section-two-box a {
   color: $black;
   padding: 12px 5px;
   text-transform: uppercase;
   margin-top: 20px;
 }
+

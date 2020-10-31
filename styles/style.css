@@ -299,6 +299,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   height: 40px;
+  padding: 10px;
   background-color: #FFD300;
 }
 
@@ -307,7 +308,6 @@ nav {
   text-align: center;
   line-height: 29px;
   letter-spacing: 1px;
-  color: #FFFFFF;
   text-transform: capitalize;
   width: calc(100% / 3);
   padding-top: 50px;
@@ -407,17 +407,17 @@ i {
   background-color: #171B0E;
 }
 
-.best-burger-box {
+.section-two-box {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 500px 400px;
-      grid-template-rows: 500px 400px;
+  -ms-grid-rows: 500px 500px;
+      grid-template-rows: 500px 500px;
   grid-column-gap: 100px;
 }
 
-.best-burger-box h2 {
+.section-two-box h2 {
   margin-top: 50px;
 }
 
@@ -429,9 +429,32 @@ i {
   float: right;
 }
 
-.best-burger-box a {
+.section-two-box a {
   color: #0F0F0F;
   padding: 12px 5px;
   text-transform: uppercase;
   margin-top: 20px;
+}
+
+.article-1 {
+  background-color: #2B331B;
+  padding-bottom: 50px;
+}
+
+.article-1 h2 {
+  color: #FFD300;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.article-1 a {
+  background-color: #0F0F0F;
+  text-align: center;
+  margin: 30px auto;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.banner {
+  max-height: 500px;
 }
