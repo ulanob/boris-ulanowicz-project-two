@@ -1,0 +1,26 @@
+.gallery {
+  background-color: $almost-black;
+}
+
+.gallery .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  padding: 100px 0;
+}
+
+footer {
+  background-color: $black;
+  text-align: center;
+  padding: 5px 0;
+}
+
+footer a {
+  display: inline;
+  font-family: 'Barlow', sans-serif;
+  background-color: inherit;
+  color: $white;
+  padding: 0;
+  margin: 0;
+}
