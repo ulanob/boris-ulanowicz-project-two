@@ -31,6 +31,7 @@
 }
 
 
+// BEST BURGERS & TRY SOMETHING
 .home-section-2 {
   background-color: $almost-black;
 }
@@ -38,38 +39,44 @@
 .section-two-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px 500px;
-  grid-column-gap: 100px;
+  grid-template-rows: 500px 350px;
+  grid-column-gap: 150px;
   // overflow: visible;
+  .best-burgers h2{
+    margin-top: 50px;
+  }
+  a {
+    color: $black;
+    padding: 12px 5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
 }
 
-.section-two-box h2 {
-  margin-top: 50px;
+.best-burger-img-box,
+.try-something-img-box {
+  position: relative;
+  img {
+    width: 125%;
+    position: absolute;
+    box-shadow: 20px 20px $sunflower-yellow;
+  }
 }
-
-// .section-two-box img {
-//   // width: inherit;
-//   // float: left;
-// }
+.best-burger-img-box img{
+  left: -160px;
+  top: -30px;
+}
+.try-something-img-box img{
+  box-shadow: -20px 20px #FFD300;
+  left: 28px;
+}
 
 .try-something {
   text-align: right;
+  a {
+    float: right;
+  }
 }
-
-// figure out why .try-something a is not aligning right
-.try-something a {
-  float: right;
-}
-
-.section-two-box a {
-  color: $black;
-  padding: 12px 5px;
-  text-transform: uppercase;
-  margin-top: 20px;
-}
-
-// TO DO:
-// Rethink how the divs are named in this section. remove margin on bottom h2. Find a way to have the immages spill over the side of the wrapper but also to scale properly... maybe flexbox?
 
 .article-1, 
 .article-2{
@@ -89,7 +96,7 @@
 }
 
 .article-1{
-  padding-top: 50px;
+  padding-top: 150px;
 }
 
 
@@ -106,12 +113,16 @@
 }
 
 .article-2-img{
-  width: 30%;
+  width: 25%;
+  img{
+    box-shadow: -20px 20px #FFD300;
+  }
 }
 
 .article-2-text {
   width: 70%;
   padding: 0px 50px;
+  margin-left: 50px;
   h2,
   a {
     text-align: left;
