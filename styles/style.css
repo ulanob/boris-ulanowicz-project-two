@@ -371,14 +371,23 @@ h1 span {
   top: 35%;
 }
 
-.blog-header {
-  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+.blog-header,
+.contact-header {
   min-height: 70vh;
 }
 
-.blog-header h2 {
+.blog-header h2,
+.contact-header h2 {
   margin-top: 30px;
   margin-left: 20px;
+}
+
+.blog-header {
+  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+}
+
+.contact-header {
+  background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
 }
 
 footer {
@@ -420,7 +429,7 @@ footer a {
   margin: 20px auto;
 }
 
-i {
+.useful-links i {
   font-size: 20px;
   position: absolute;
   left: 12px;
@@ -741,4 +750,50 @@ form button {
   padding: 5px 0;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.contact-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2B331B;
+  position: relative;
+}
+
+.contact-body .contact-left {
+  width: 33%;
+  height: 500px;
+  padding: 100px;
+}
+
+.contact-body .contact-left p:first-of-type {
+  padding: 20px 0;
+}
+
+.contact-body .contact-right {
+  width: 66%;
+  background-color: #171B0E;
+  padding: 50px;
+  -webkit-box-shadow: 20px 20px #FFD300;
+          box-shadow: 20px 20px #FFD300;
+  position: absolute;
+  top: -200px;
+  right: 50px;
+}
+
+.social-icons {
+  width: 50%;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-icons i {
+  color: #FFD300;
+  display: block;
+  font-size: 2rem;
 }

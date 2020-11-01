@@ -1,0 +1,50 @@
+.contact-body{
+  display: flex;
+  background-color: $pine;
+  position: relative;
+  .contact-left{
+    width: 33%;
+    height: 500px;
+    padding: 100px;
+    p:first-of-type{
+      padding: 20px 0;
+    }
+  }
+  .contact-right{
+    width: 66%;
+    background-color: $almost-black;
+    padding: 50px;
+    box-shadow: 20px 20px $sunflower-yellow;
+    position: absolute;
+    top: -200px;
+    right: 50px;
+  }
+}
+.social-icons{
+  width: 50%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  i{
+    color: $sunflower-yellow;
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+// Form Position Styling
+// .contact-right{
+//   width: 1003px;
+//   height: 544px;
+//   background-color: $sunflower-yellow;
+//   position: relative;
+//   form {
+//     width: 1003px;
+//     height: 544px;
+//     padding: 50px;
+//     background-color: $almost-black;
+//     position: absolute;
+//     top: -60px;
+//     right: 20px;
+//   }
+// }

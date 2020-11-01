@@ -64,14 +64,23 @@ h1 span {
   // min-height: 400px;
 }
 
-// BLOG header styles
-.blog-header {
-  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+// BLOG, CONTACT header styles
+.blog-header,
+.contact-header {
   min-height: 70vh;
   h2 {
     margin-top: 30px;
     margin-left: 20px;
   }
+}
+
+// BLOG header background 
+.blog-header {
+  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+}
+// CONTACT header background
+.contact-header {
+  background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
 }
 
 
