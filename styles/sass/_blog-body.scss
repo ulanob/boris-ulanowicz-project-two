@@ -9,13 +9,10 @@
   grid-gap: 50px;
   // find a more elegant solution for this:
   min-height: 2500px;
-  // grid-auto-flow: column;
 }
 
 // ASIDE styles
 aside {
-  // width: 40%;
-  // float: left;
   padding: 100px 100px 25px;
 }
 
@@ -58,30 +55,18 @@ aside {
   }
 }
 
-
-// BLOG ENTRY styles
-.blog-main-content {
-  // width: 60%;
-  // float: left;
+.blog-post-image-back{
   position: relative;
-}
-.blog-position-absolute-fix {
-  position: absolute;
-  top: -110px;
-}
-.blog-post-image-back {
-  background-color: $sunflower-yellow;
-  position: relative;
-  width: 885px;
-  height: 580px;
-  // overflow: visible;
-  img {
-    width: 900px;
+  // using image dimensions
+  width: calc(955px - 20px);
+  height: calc(626px - 125px);
+  img{
     position: absolute;
-    bottom: 10px;
-    right: -40px;
+    box-shadow: -20px 20px $sunflower-yellow;
+    top: -125px;
+    right: -20px;
   }
-}
+} 
 
 .blog-text-container {
   padding: 75px;
