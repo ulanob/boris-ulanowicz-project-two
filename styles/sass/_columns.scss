@@ -1,0 +1,23 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#name, 
+#email{
+  width: 48%;
+  height: 30px;
+  display: inline;
+  background-color: inherit;
+  border: 0;
+  border-bottom: 3px solid $sunflower-yellow;
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+  color: $white; 
+  input::placeholder-shown{
+    margin-left: 50px;
+    opacity: 1;
+  }
+}
+

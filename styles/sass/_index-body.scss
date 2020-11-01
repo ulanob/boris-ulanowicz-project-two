@@ -1,0 +1,136 @@
+.home-section-1 {
+  background-color: $pine;
+  padding-top: 300px;
+  .useful-links {
+  display: grid;
+  grid-template-columns: 5% 45% 5% 45%;
+  grid-template-rows: 300px 300px;
+  }
+}
+
+.icon{
+  background-color: $sunflower-yellow;
+  border-radius: 50%;
+  color: $black;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  margin: 20px auto;
+}
+
+i {
+  font-size: 20px;
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  color:$black;
+}
+
+.icon-right i{
+  left: 8px
+}
+
+
+.home-section-2 {
+  background-color: $almost-black;
+}
+
+.section-two-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px 500px;
+  grid-column-gap: 100px;
+  // overflow: visible;
+}
+
+.section-two-box h2 {
+  margin-top: 50px;
+}
+
+// .section-two-box img {
+//   // width: inherit;
+//   // float: left;
+// }
+
+.try-something {
+  text-align: right;
+}
+
+// figure out why .try-something a is not aligning right
+.try-something a {
+  float: right;
+}
+
+.section-two-box a {
+  color: $black;
+  padding: 12px 5px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+// TO DO:
+// Rethink how the divs are named in this section. remove margin on bottom h2. Find a way to have the immages spill over the side of the wrapper but also to scale properly... maybe flexbox?
+
+.article-1, 
+.article-2{
+  background-color: $pine;
+  padding-bottom: 50px;
+  h2 {
+    color: $sunflower-yellow;
+    text-align: center;
+  }
+  a {
+    background-color: $black;
+    text-align: center;
+    margin: 30px auto;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+.article-1{
+  padding-top: 50px;
+}
+
+
+.banner {
+  max-height: 500px;
+}
+
+.article-2{
+  .wrapper{
+    display: flex;
+    padding-top: 100px;
+  }
+
+}
+
+.article-2-img{
+  width: 30%;
+}
+
+.article-2-text {
+  width: 70%;
+  padding: 0px 50px;
+  h2,
+  a {
+    text-align: left;
+  }
+  a {
+    margin: 20px 0;
+  }
+}
+
+// create global rule for top+bottom padding for sections, articles, and gallery
+
+// GALLERY styles
+.gallery {
+  background-color: $almost-black;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 100px 0;
+  }
+}
