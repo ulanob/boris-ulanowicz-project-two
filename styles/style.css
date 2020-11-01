@@ -343,7 +343,8 @@ nav a {
 }
 
 nav a:hover,
-nav a:focus {
+nav a:focus,
+.you-are-here {
   border-bottom: 3px solid #FFD300;
 }
 
@@ -689,39 +690,55 @@ form {
           justify-content: space-between;
 }
 
-#name,
-#email {
-  width: 48%;
-  height: 30px;
-  display: inline;
-  background-color: inherit;
-  border: 0;
-  border-bottom: 3px solid #FFD300;
+form input, form textarea, form button {
   font-family: 'Barlow', sans-serif;
   font-size: 2rem;
+}
+
+form input, form textarea {
+  background-color: inherit;
+  padding: 25px;
   color: #FFFFFF;
 }
 
-#name input::-webkit-input-placeholder-shown,
-#email input::-webkit-input-placeholder-shown {
-  margin-left: 50px;
+form input {
+  width: 48%;
+  height: 30px;
+  display: inline;
+  border: 0;
+  border-bottom: 3px solid #FFD300;
+}
+
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
   opacity: 1;
 }
 
-#name input:-ms-input-placeholder-shown,
-#email input:-ms-input-placeholder-shown {
-  margin-left: 50px;
+form input:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
   opacity: 1;
 }
 
-#name input::-ms-input-placeholder-shown,
-#email input::-ms-input-placeholder-shown {
-  margin-left: 50px;
+form input::-ms-input-placeholder,
+form textarea::-ms-input-placeholder {
   opacity: 1;
 }
 
-#name input::placeholder-shown,
-#email input::placeholder-shown {
-  margin-left: 50px;
+form input::placeholder,
+form textarea::placeholder {
   opacity: 1;
+}
+
+form textarea, form button {
+  width: 100%;
+  margin-top: 25px;
+  border: 3px solid #FFD300;
+}
+
+form button {
+  background-color: #FFD300;
+  height: 40px;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-weight: 500;
 }

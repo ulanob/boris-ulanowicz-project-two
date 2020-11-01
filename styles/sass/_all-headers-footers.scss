@@ -35,18 +35,14 @@ nav a {
 }
 
 nav a:hover,
-nav a:focus {
+nav a:focus,
+.you-are-here {
   border-bottom: 3px solid $sunflower-yellow;
 }
 
 // HOMEPAGE header styles
 .home-header {
   background-image: url(../the-restaurant-mall-assets/home-header.jpg);
-  // min-height: 95vh;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: top;
-  // position: relative;
 }
 
 h1 span {
