@@ -2,6 +2,7 @@
   background-color: $pine;
 }
 
+// ASIDE styles
 aside {
   width: 40%;
   float: left;
@@ -48,7 +49,71 @@ aside {
   }
 }
 
+
+// BLOG ENTRY styles
 .blog-main-content {
   width: 60%;
   float: left;
+  position: relative;
+}
+.blog-position-absolute-fix {
+  position: absolute;
+  top: -120px;
+}
+.blog-post-image-back {
+  background-color: $sunflower-yellow;
+  position: relative;
+  width: 885px;
+  height: 580px;
+  // overflow: visible;
+  img {
+    width: 885px;
+    position: absolute;
+    top: -30px;
+    right: -20px;
+  }
+}
+
+.blog-text-container {
+  padding: 75px;
+  border-left: 5px solid $sunflower-yellow;
+  border-bottom: 5px solid $sunflower-yellow;
+  h2 {
+    color: $sunflower-yellow;
+  }
+  p{
+    padding-bottom: 20px;
+  }  
+  :nth-child(2) {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  :last-child {
+    padding-bottom: 60px;
+  }
+}
+
+// COMMENT styles
+.comment-section{
+  padding: 50px 75px;
+}
+.comment-1,
+.comment-2 {
+  display: flex;
+  .comment-image{
+    width: calc(100% / 6);
+  }
+  img {
+    width: 75%;
+  }
+  .comment-text{
+    width: calc((100% / 6) * 5);
+    padding: 0 20px 20px 20px;
+    margin-bottom: 50px;
+    :first-child{
+      color: $sunflower-yellow;
+      padding-bottom: 10px;
+      font-weight: 600;
+    }
+  }
 }

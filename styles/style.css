@@ -588,4 +588,82 @@ aside {
 .blog-main-content {
   width: 60%;
   float: left;
+  position: relative;
+}
+
+.blog-position-absolute-fix {
+  position: absolute;
+  top: -120px;
+}
+
+.blog-post-image-back {
+  background-color: #FFD300;
+  position: relative;
+  width: 885px;
+  height: 580px;
+}
+
+.blog-post-image-back img {
+  width: 885px;
+  position: absolute;
+  top: -30px;
+  right: -20px;
+}
+
+.blog-text-container {
+  padding: 75px;
+  border-left: 5px solid #FFD300;
+  border-bottom: 5px solid #FFD300;
+}
+
+.blog-text-container h2 {
+  color: #FFD300;
+}
+
+.blog-text-container p {
+  padding-bottom: 20px;
+}
+
+.blog-text-container :nth-child(2) {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.blog-text-container :last-child {
+  padding-bottom: 60px;
+}
+
+.comment-section {
+  padding: 50px 75px;
+}
+
+.comment-1,
+.comment-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-1 .comment-image,
+.comment-2 .comment-image {
+  width: calc(100% / 6);
+}
+
+.comment-1 img,
+.comment-2 img {
+  width: 75%;
+}
+
+.comment-1 .comment-text,
+.comment-2 .comment-text {
+  width: calc((100% / 6) * 5);
+  padding: 0 20px 20px 20px;
+  margin-bottom: 50px;
+}
+
+.comment-1 .comment-text :first-child,
+.comment-2 .comment-text :first-child {
+  color: #FFD300;
+  padding-bottom: 10px;
+  font-weight: 600;
 }
