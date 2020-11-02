@@ -5,10 +5,8 @@
 .blog-grid{
   display: grid;
   grid-template-columns: 3.5fr 6.5fr;
-  grid-template-rows: 500px;
+  grid-template-rows: repeat(auto-fit);
   grid-gap: 50px;
-  // find a more elegant solution for this:
-  min-height: 2500px;
 }
 
 // ASIDE styles
@@ -57,9 +55,8 @@ aside {
 
 .blog-post-image-back{
   position: relative;
-  // using image dimensions
-  width: calc(955px - 20px);
-  height: calc(626px - 125px);
+  width: calc(100% - 20px);
+  max-height: 500px;
   img{
     position: absolute;
     box-shadow: -20px 20px $sunflower-yellow;
@@ -69,7 +66,8 @@ aside {
 } 
 
 .blog-text-container {
-  padding: 75px;
+  // I am so sorry but this is the only solution I found that scaled the image down but kept border-left with the previous element's box shadow. I simply beg your pardon for having to read such janky code
+  padding: 55% 75px 75px;
   border-left: 5px solid $sunflower-yellow;
   border-bottom: 5px solid $sunflower-yellow;
   h2 {
@@ -109,5 +107,34 @@ aside {
       padding-bottom: 10px;
       font-weight: 600;
     }
+  }
+}
+
+@media (max-width: 1150px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    .blog-aside{
+      padding: 0;
+    }
+  }
+  .aside-box{
+    text-align: center;
+    padding: 50px;
+    .aside-image-box{
+      min-height: max-content;
+    }
+  }
+
+  .aside-image-box img,
+  .blog-post-image-back img {
+    position: static;
+    width: 50%;
+    margin: 0 auto;
+    min-height: max-content;
+  }
+  .blog-text-container {
+    border: none;
+    padding: 75px 75px 0;
   }
 }

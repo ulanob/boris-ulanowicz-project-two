@@ -40,3 +40,15 @@ form {
   }
 }
 
+@media (max-width: 880px) {
+  form{
+    input, 
+    textarea, 
+    button {
+      font-size: 1.5rem;
+    }
+    input{
+      width: 100%;
+    }
+  }
+}

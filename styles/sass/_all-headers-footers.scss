@@ -149,14 +149,15 @@ footer {
       height: 60px;
       padding: 15px 0;
       margin: 0;
-      color: $black;
+      color: $white;
       text-align: center;
       text-transform: uppercase;
-      background-color: $white; 
-      border: 2px solid $white;
+      background-color: $almost-black; 
+      border: 2px solid $almost-black;
     }
     a:hover,
-    a:focus {
+    a:focus,
+    .you-are-here {
       background-color: $sunflower-yellow;
       border: 2px solid $sunflower-yellow;
     }
@@ -172,5 +173,11 @@ footer {
 
   #toggle {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-header {
+    background-position: 20%;
   }
 }
