@@ -5,7 +5,7 @@
 html {
   font-size: 62.5%;
   font-family: 'Barlow', sans-serif;
-  // background-color: $almost-black;
+  background-color: $almost-black;
   color: white;
 }
 
@@ -41,7 +41,7 @@ h2 {
   font-weight: 600;
   font-size: 4.5rem;
   padding: 20px 0;
-  // line-height: 9.98rem;
+  // line-height: 9.98rem; took this out because it looked funny when headings wrapped into a second line
 }
 
 h3 {
@@ -68,8 +68,6 @@ a {
 
 
 // RESPONSIVE
-
-// Disclaimer: What I did here was drag the side of the viewport left to see where the header elements broke into two lines, and adjusted all the fonts smaller at these points. I know I'm suppsoed to keep to 3 breakpoints ideally, but not sure how to reconcile all these elements!
 
 @media (max-width: 1150px) {
   h1 {
