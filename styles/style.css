@@ -443,9 +443,6 @@ footer a {
   header img {
     display: none;
   }
-}
-
-@media (max-width: 880px) {
   nav {
     width: 100%;
     height: auto;
@@ -763,11 +760,25 @@ form button {
     margin-bottom: 20px;
   }
   .section-two-box {
-    -ms-grid-rows: 350px 350px;
-        grid-template-rows: 350px 350px;
+    -ms-grid-columns: 75%;
+        grid-template-columns: 75%;
+    -ms-grid-rows: 225px;
+        grid-template-rows: 225px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
   }
   .section-two-box img {
     position: static;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .section-two-box div {
+    margin: 0 auto;
+  }
+  .section-two-box div:last-of-type {
+    margin-bottom: 20px;
   }
   .home-section-1,
   .article-1,
@@ -777,6 +788,36 @@ form button {
   }
   .article-2 {
     padding-bottom: 0;
+  }
+  .article-2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article-2 div h2 {
+    margin-top: 50px;
+  }
+  .article-2 div .article-2-text {
+    width: 100%;
+    padding: 0 40px 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-two-box img,
+  .article-2 img {
+    width: 100%;
+  }
+  .section-two-box a,
+  .article-2 a {
+    margin-bottom: 20px;
   }
 }
 
