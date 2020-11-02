@@ -303,6 +303,27 @@ a {
   background-color: #FFD300;
 }
 
+@media (max-width: 1150px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+    line-height: normal;
+    padding-bottom: 10px;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+  a {
+    font-size: 1.8rem;
+  }
+}
+
 header {
   min-height: 95vh;
   background-repeat: no-repeat;
@@ -348,6 +369,10 @@ nav a:focus,
   border-bottom: 3px solid #FFD300;
 }
 
+nav label, #toggle {
+  display: none;
+}
+
 .home-header {
   background-image: url(../the-restaurant-mall-assets/home-header.jpg);
 }
@@ -366,6 +391,7 @@ h1 span {
 
 .home-header img {
   width: 55%;
+  max-width: 650px;
   position: absolute;
   right: 0px;
   top: 35%;
@@ -403,6 +429,79 @@ footer a {
   color: #FFFFFF;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 1050px) {
+  .home-header img {
+    width: 40%;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 880px) {
+  header img {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+  nav label, #toggle {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+  }
+  ul.sliding-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    width: 30%;
+    top: 100px;
+    height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 10;
+  }
+  ul.sliding-menu li {
+    margin-bottom: 5px;
+  }
+  ul.sliding-menu a {
+    width: 100%;
+    display: block;
+    height: 60px;
+    padding: 15px 0;
+    margin: 0;
+    color: #0F0F0F;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+  }
+  ul.sliding-menu a:hover,
+  ul.sliding-menu a:focus {
+    background-color: #FFD300;
+    border: 2px solid #FFD300;
+  }
+  #toggle:checked + ul.sliding-menu {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    -webkit-transition: all 0.75s;
+    transition: all 0.75s;
+  }
+  #toggle {
+    display: none;
+  }
 }
 
 form {
@@ -475,7 +574,7 @@ form button {
 
 .home-section-1 {
   background-color: #2B331B;
-  padding-top: 300px;
+  padding-top: 100px;
 }
 
 .home-section-1 .useful-links {
@@ -518,9 +617,9 @@ form button {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 500px 350px;
-      grid-template-rows: 500px 350px;
-  grid-column-gap: 150px;
+  -ms-grid-rows: 400px 350px;
+      grid-template-rows: 400px 350px;
+  grid-column-gap: 100px;
 }
 
 .section-two-box .best-burgers h2 {
@@ -541,21 +640,20 @@ form button {
 
 .best-burger-img-box img,
 .try-something-img-box img {
-  width: 125%;
+  width: 100%;
   position: absolute;
   -webkit-box-shadow: 20px 20px #FFD300;
           box-shadow: 20px 20px #FFD300;
 }
 
 .best-burger-img-box img {
-  left: -160px;
   top: -30px;
 }
 
 .try-something-img-box img {
   -webkit-box-shadow: -20px 20px #FFD300;
           box-shadow: -20px 20px #FFD300;
-  left: 28px;
+  top: 50px;
 }
 
 .try-something {
@@ -604,6 +702,7 @@ form button {
 
 .article-2-img {
   width: 25%;
+  margin-left: 40px;
 }
 
 .article-2-img img {
@@ -637,8 +736,48 @@ form button {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  grid-gap: 20px;
-  padding: 100px 0;
+  grid-gap: 30px;
+  padding: 100px;
+}
+
+@media (max-width: 1150px) {
+  .icon {
+    margin: 0 auto;
+  }
+  .home-section-1 {
+    -ms-grid-rows: 100px 100px;
+        grid-template-rows: 100px 100px;
+  }
+}
+
+@media (max-width: 880px) {
+  .home-section-1 .useful-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  .home-section-1 .useful-links a, .home-section-1 .useful-links p {
+    margin-bottom: 20px;
+  }
+  .section-two-box {
+    -ms-grid-rows: 350px 350px;
+        grid-template-rows: 350px 350px;
+  }
+  .section-two-box img {
+    position: static;
+  }
+  .home-section-1,
+  .article-1,
+  .article-2 .wrapper,
+  .gallery .wrapper {
+    padding: 50px 20px;
+  }
+  .article-2 {
+    padding-bottom: 0;
+  }
 }
 
 .blog-body {
